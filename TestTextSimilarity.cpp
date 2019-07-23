@@ -1,10 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "TestTextSimilarity.h"
 using namespace std;
-
-
-
-
 TestTextSimilarity::TestTextSimilarity(string dict)
 	: DICT(dict)
 	, DICT_PATH(dict + "/jieba.dict.utf8")
@@ -18,7 +14,6 @@ TestTextSimilarity::TestTextSimilarity(string dict)
 	USER_DICT_PATH,
 	IDF_PATH,
 	STOP_WORD_PATH)
-
 {
 	getStopWordTable(STOP_WORD_PATH.c_str());
 }
